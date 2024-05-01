@@ -1,18 +1,17 @@
 *{
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
 }
 body,html{
     width: 100%;
-    height: 100%;
 }
 #main{
     width: 100%;
     min-height: 100vh;
     background-color: black;
     opacity: 0.9;
-    overflow:scroll;
+    
 }
 #navbar{
     width: 100%;
@@ -92,7 +91,7 @@ body,html{
     color: #000;
 }
 #footer{
-    width: 100%;
+    
     /* height:calc(100% - 50px - 480px); */
     /* background-color: azure; */
     display: flex;
@@ -121,7 +120,7 @@ body,html{
      padding-right: 30px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 700px){
     #main{
         width: 100%;
         /* overflow-x: hidden; */
@@ -160,7 +159,7 @@ body,html{
         padding-bottom: 14px;
     }
     #ctntext #email{
-        position: static;
+        
         display: grid;
         align-items: center;
         justify-content: center;
@@ -175,7 +174,11 @@ body,html{
         margin-left: 94px;
     }
     #footer{
-        position: static;
+        flex-direction: column;
+        margin-top: 35rem;
         /* bottom:-4px; */
+    }
+    #footer #ftimg{
+        flex-direction: column;
     }
 }
